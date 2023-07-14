@@ -1,20 +1,19 @@
 public class Main {
     public static void main(String[] args) {
         int amount = 1001;
-        int mount = 100;
-        int x;
-
-
+        int mount = 100; //объявление переменных
         int bonus;
+        int result; //объявление переменной
+
         if (amount > 1000) {
             bonus = amount / 100;
-            x = amount + mount + bonus;
+            result = amount + mount + bonus;
         } else {
             bonus = 0;
-            x = amount + mount;
+            result = amount + mount;
         }
-        System.out.println("Количество бонусов: " + bonus);
-        System.out.println("Итоговая сумма: " + x);
+        System.out.println("Количество бонусов: "+bonus);
+        System.out.println("Итоговая сумма: "+result);
 
     }
 }
